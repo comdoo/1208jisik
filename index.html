@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>귀여운 할일 관리 앱</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://i.imgur.com/XyqQM2Y.png" alt="귀여운 메모장" class="header-image">
+            <h1>오늘의 할일</h1>
+        </div>
+        
+        <div class="todo-input">
+            <input type="text" id="todoInput" placeholder="✍️ 할일을 입력하세요">
+            <button id="addBtn">
+                <img src="https://i.imgur.com/W7oYtsR.png" alt="추가" class="add-icon">
+                추가
+            </button>
+        </div>
+
+        <div class="todo-list">
+            <ul id="todoList">
+                <!-- 할일 목록이 여기에 추가됩니다 -->
+            </ul>
+        </div>
+        
+        <div class="footer-image">
+            <img src="https://i.imgur.com/8rXZ5ww.png" alt="귀여운 캐릭터">
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

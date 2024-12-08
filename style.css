@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fef6e4;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header-image {
+    width: 120px;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: #f582ae;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.todo-input {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#todoInput {
+    flex: 1;
+    padding: 1rem;
+    border: 2px solid #fef6e4;
+    border-radius: 15px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+#todoInput:focus {
+    outline: none;
+    border-color: #f582ae;
+}
+
+#addBtn {
+    padding: 0.8rem 1.5rem;
+    background-color: #f582ae;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.3s;
+}
+
+#addBtn:hover {
+    transform: scale(1.05);
+}
+
+.add-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.todo-list ul {
+    list-style: none;
+}
+
+.todo-list li {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fef6e4;
+    margin-bottom: 0.8rem;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.todo-list li:hover {
+    transform: translateX(5px);
+}
+
+.todo-list li.completed {
+    background-color: #e0e0e0;
+    text-decoration: line-through;
+    color: #666;
+}
+
+.todo-list input[type="checkbox"] {
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.todo-list .delete-btn {
+    margin-left: auto;
+    background-color: #ff8ba7;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.todo-list .delete-btn:hover {
+    background-color: #ff6b8b;
+}
+
+.footer-image {
+    position: absolute;
+    bottom: -50px;
+    right: -30px;
+    width: 100px;
+    opacity: 0.9;
+}
+
+.footer-image img {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .footer-image {
+        width: 80px;
+        bottom: -40px;
+        right: -20px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+}
